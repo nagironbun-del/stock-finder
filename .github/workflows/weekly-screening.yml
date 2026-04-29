@@ -1,0 +1,48 @@
+name: Weekly Stock Screening
+
+on:
+  schedule:
+    # ファンダメンタル指標は日々大きく変わらないので週1回で十分
+    # 月曜朝6時(JST) = 21:00 UTC日曜
+    - cron: '0 21 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Run screening
+        run: python scripts/screen.py
+
+      - name: Commit & push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/findings.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            DATE_JST=$(TZ=Asia/Tokyo date +'%Y-%m-%d %H:%M JST')
+            git commit -m "Update findings - ${DATE_JST}"
+            git push
+          fi
