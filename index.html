@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Stock Finder — 割安成長株スクリーナー</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #f8f5ee;
+    --paper-deep: #efeadd;
+    --ink: #1a1614;
+    --ink-soft: #4a4540;
+    --ink-mute: #8b8378;
+    --rule: #2a2522;
+    --line: #d8d0bf;
+    --accent: #8b1d1d;       /* deep red */
+    --accent-hover: #a82424;
+    --gold: #a07820;
+    --green: #2d5a3d;
+    --green-bg: #e8efe0;
+    --red-bg: #f5e3df;
+    --neutral-bg: #ebe5d4;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  /* Subtle paper texture */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(160,120,32,0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(139,29,29,0.02) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 48px 32px 80px;
+  }
+
+  /* ====== Masthead ====== */
+  header.masthead {
+    border-top: 4px double var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 28px 0 22px;
+    margin-bottom: 36px;
+    position: relative;
+  }
+  .masthead-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .masthead-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    line-height: 0.95;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .masthead-title em {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 400;
+  }
+  .masthead-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-top: 10px;
+  }
+  .masthead-meta {
+    text-align: right;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+  }
+  .masthead-meta .date {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--ink);
+    letter-spacing: 0;
+    line-height: 1;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .vol-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--ink-mute);
+    text-align: center;
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+
+  /* ====== Lede / methodology ====== */
+  .lede {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--ink-soft);
+    max-width: 720px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    padding-left: 18px;
+    border-left: 3px solid var(--accent);
+  }
+
+  /* ====== Tabs ====== */
+  .tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .tab {
+    background: transparent;
+    border: none;
+    color: var(--ink-mute);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 14px 22px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.18s;
+    font-weight: 500;
+    position: relative;
+    bottom: -1px;
+  }
+  .tab:hover { color: var(--ink); }
+  .tab.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .tab-count {
+    color: var(--ink-mute);
+    margin-left: 6px;
+    font-size: 10px;
+  }
+
+  /* ====== Card list ====== */
+  .findings { display: flex; flex-direction: column; }
+
+  .finding {
+    display: grid;
+    grid-template-columns: 50px 1fr auto;
+    gap: 24px;
+    align-items: start;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .finding:hover { background: rgba(0,0,0,0.015); }
+  .finding:last-child { border-bottom: 1px solid var(--line); }
+
+  .rank {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 44px;
+    font-style: italic;
+    line-height: 1;
+    color: var(--ink-mute);
+    text-align: right;
+    padding-top: 8px;
+  }
+  .finding:nth-child(1) .rank { color: var(--accent); font-weight: 600; }
+  .finding:nth-child(2) .rank { color: var(--gold); }
+  .finding:nth-child(3) .rank { color: var(--ink-soft); }
+
+  .finding-body { min-width: 0; }
+  .finding-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .ticker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+  }
+  .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+  .price {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+
+  .finding-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 10px;
+  }
+  .finding-meta .sep { margin: 0 8px; color: var(--line); }
+
+  /* Axis bars */
+  .axes {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+  .axis {
+    flex: 1;
+    min-width: 130px;
+  }
+  .axis-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 5px;
+  }
+  .axis-score {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink);
+    letter-spacing: 0;
+  }
+  .axis-bar {
+    height: 4px;
+    background: var(--paper-deep);
+    overflow: hidden;
+    border-radius: 1px;
+  }
+  .axis-bar-fill {
+    height: 100%;
+    transition: width 0.5s ease;
+  }
+  .axis-value .axis-bar-fill { background: var(--accent); }
+  .axis-growth .axis-bar-fill { background: var(--green); }
+  .axis-timing .axis-bar-fill { background: var(--gold); }
+
+  /* Total score block */
+  .total-block {
+    text-align: right;
+    min-width: 110px;
+    padding-top: 4px;
+  }
+  .total-score {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 0.9;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+  .total-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-top: 6px;
+  }
+
+  /* Expanded details */
+  .details {
+    display: none;
+    grid-column: 1 / -1;
+    margin-top: 18px;
+    padding: 20px 24px;
+    background: var(--paper-deep);
+    border-left: 3px solid var(--accent);
+  }
+  .finding.expanded .details { display: block; }
+
+  .detail-section { margin-bottom: 22px; }
+  .detail-section:last-child { margin-bottom: 0; }
+  .detail-section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--accent);
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--line);
+  }
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px 18px;
+  }
+  .detail-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px 0;
+  }
+  .detail-row-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .detail-row-note {
+    font-size: 13px;
+    color: var(--ink);
+  }
+  .detail-row-score {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+  }
+
+  /* ====== Empty/error ====== */
+  .empty, .error {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--ink-mute);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+  }
+  .error { color: var(--accent); }
+
+  /* ====== Footer ====== */
+  footer {
+    margin-top: 60px;
+    padding-top: 28px;
+    border-top: 4px double var(--rule);
+    color: var(--ink-soft);
+    font-size: 12px;
+    line-height: 1.65;
+  }
+  .footer-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+  .disclaimer {
+    background: var(--red-bg);
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    margin-top: 16px;
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+  .disclaimer strong { color: var(--accent); }
+
+  /* ====== Mobile ====== */
+  @media (max-width: 720px) {
+    .container { padding: 28px 18px 60px; }
+    .masthead-title { font-size: 38px; }
+    .lede { font-size: 16px; }
+    .finding {
+      grid-template-columns: 36px 1fr;
+      gap: 14px;
+      padding: 20px 0;
+    }
+    .total-block {
+      grid-column: 1 / -1;
+      text-align: left;
+      padding-top: 10px;
+      margin-top: 10px;
+      border-top: 1px dashed var(--line);
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+    }
+    .total-score { font-size: 42px; }
+    .name { font-size: 18px; }
+    .rank { font-size: 32px; }
+    .axes { gap: 10px; }
+    .axis { min-width: 100px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="masthead">
+    <div class="masthead-row">
+      <div>
+        <h1 class="masthead-title">Stock <em>Finder</em></h1>
+        <div class="masthead-sub">Value &amp; Growth Screener · Weekly Edition</div>
+      </div>
+      <div class="masthead-meta">
+        <span class="date" id="header-date">—</span>
+        <span id="header-time">—</span>
+      </div>
+    </div>
+    <div class="vol-line" id="vol-line">— EDITION ZERO —</div>
+  </header>
+
+  <div class="lede">
+    今は割安に放置されているが、ファンダメンタルから将来の成長が期待できる銘柄を、
+    PER・PBR・PEG等の<strong>割安度</strong>、売上・利益成長率と<strong>収益性</strong>、
+    52週レンジでの<strong>底値圏</strong>判定の三軸で抽出した週次スクリーニング結果。
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-market="JP">日本株 <span class="tab-count" id="count-jp">—</span></button>
+    <button class="tab" data-market="US">米国株 <span class="tab-count" id="count-us">—</span></button>
+  </div>
+
+  <div id="content">
+    <div class="empty">読み込み中...</div>
+  </div>
+
+  <footer>
+    <div class="footer-title">Methodology</div>
+    <div id="methodology">—</div>
+    <div class="disclaimer" id="disclaimer">
+      <strong>免責:</strong> 本データは投資推奨ではありません。
+    </div>
+  </footer>
+</div>
+
+<script>
+const DATA_URL = 'data/findings.json';
+let currentData = null;
+let currentMarket = 'JP';
+
+async function loadData() {
+  try {
+    const r = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    currentData = await r.json();
+    render();
+  } catch (e) {
+    document.getElementById('content').innerHTML =
+      `<div class="error">データを読み込めませんでした (${e.message})<br>
+      <span style="font-size:14px;color:var(--ink-mute);font-style:normal;">data/findings.json が存在することを確認してください</span></div>`;
+  }
+}
+
+function render() {
+  if (!currentData) return;
+
+  const ts = new Date(currentData.generated_at);
+  document.getElementById('header-date').textContent =
+    ts.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' });
+  document.getElementById('header-time').textContent =
+    'Updated ' + ts.toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' }) + ' JST';
+
+  // Volume line: ISO week
+  const wk = isoWeek(ts);
+  document.getElementById('vol-line').textContent = `— VOL. ${ts.getFullYear()} · WEEK ${String(wk).padStart(2, '0')} —`;
+
+  document.getElementById('count-jp').textContent = `(${currentData.markets.JP.all_scanned})`;
+  document.getElementById('count-us').textContent = `(${currentData.markets.US.all_scanned})`;
+
+  document.getElementById('methodology').textContent = currentData.methodology || '';
+  document.getElementById('disclaimer').innerHTML =
+    `<strong>免責:</strong> ${currentData.disclaimer}`;
+
+  renderMarket();
+}
+
+function isoWeek(date) {
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const day = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+}
+
+function renderMarket() {
+  const data = currentData.markets[currentMarket];
+  const list = data.top || [];
+  if (!list.length) {
+    document.getElementById('content').innerHTML = '<div class="empty">該当銘柄がありません</div>';
+    return;
+  }
+  document.getElementById('content').innerHTML =
+    '<div class="findings">' + list.map((s, i) => renderFinding(s, i + 1)).join('') + '</div>';
+
+  document.querySelectorAll('.finding').forEach(el => {
+    el.addEventListener('click', () => el.classList.toggle('expanded'));
+  });
+}
+
+function renderFinding(s, rank) {
+  const v = s.axis_scores.value, g = s.axis_scores.growth, t = s.axis_scores.timing;
+  const priceStr = s.price ? `${fmtPrice(s.price)} ${s.currency || ''}` : '—';
+  const capStr = s.market_cap ? fmtCap(s.market_cap, s.currency) : '—';
+
+  return `
+    <article class="finding" data-ticker="${s.ticker}">
+      <div class="rank">${String(rank).padStart(2, '0')}</div>
+      <div class="finding-body">
+        <div class="finding-head">
+          <span class="ticker">${s.ticker}</span>
+          <span class="name">${escapeHtml(s.name)}</span>
+        </div>
+        <div class="finding-meta">
+          ${escapeHtml(s.sector)} <span class="sep">·</span> ${escapeHtml(s.industry)} <span class="sep">·</span>
+          ${priceStr} <span class="sep">·</span> 時価総額 ${capStr}
+        </div>
+        <div class="axes">
+          ${axisBar('value', 'Value (割安)', v)}
+          ${axisBar('growth', 'Growth (成長)', g)}
+          ${axisBar('timing', 'Timing (底値)', t)}
+        </div>
+        <div class="details">
+          ${detailSection('Value — 割安度の内訳', s.value)}
+          ${detailSection('Growth — 成長性の内訳', s.growth)}
+          ${detailSection('Timing — 底値圏判定の内訳', s.timing)}
+        </div>
+      </div>
+      <div class="total-block">
+        <div class="total-score">${s.total_score.toFixed(1)}</div>
+        <div class="total-label">Total Score</div>
+      </div>
+    </article>
+  `;
+}
+
+function axisBar(cls, label, score) {
+  return `<div class="axis axis-${cls}">
+    <div class="axis-label"><span>${label}</span><span class="axis-score">${score.toFixed(0)}</span></div>
+    <div class="axis-bar"><div class="axis-bar-fill" style="width:${Math.min(100, score)}%"></div></div>
+  </div>`;
+}
+
+function detailSection(title, obj) {
+  const rows = Object.values(obj).map(d => {
+    const sc = d.score != null ? `Score ${d.score}` : '';
+    return `<div class="detail-row">
+      <div class="detail-row-label">${detailLabel(d)}</div>
+      <div class="detail-row-note">${escapeHtml(d.note || '—')}</div>
+      <div class="detail-row-score">${sc}</div>
+    </div>`;
+  }).join('');
+  return `<div class="detail-section">
+    <div class="detail-section-title">${title}</div>
+    <div class="detail-grid">${rows}</div>
+  </div>`;
+}
+
+function detailLabel(d) {
+  // pick a reasonable label from note prefix
+  const note = d.note || '';
+  const m = note.match(/^([^\(:\s]+)/);
+  return m ? m[1].toUpperCase() : '—';
+}
+
+function fmtPrice(p) {
+  return p.toLocaleString('en-US', { maximumFractionDigits: 2 });
+}
+
+function fmtCap(c, cur) {
+  if (cur === 'JPY') {
+    if (c >= 1e12) return (c/1e12).toFixed(2) + '兆円';
+    if (c >= 1e8) return (c/1e8).toFixed(0) + '億円';
+    return c.toLocaleString('en-US');
+  }
+  if (c >= 1e12) return '$' + (c/1e12).toFixed(2) + 'T';
+  if (c >= 1e9) return '$' + (c/1e9).toFixed(1) + 'B';
+  if (c >= 1e6) return '$' + (c/1e6).toFixed(0) + 'M';
+  return c.toLocaleString('en-US');
+}
+
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, c =>
+    ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+}
+
+document.querySelectorAll('.tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentMarket = btn.dataset.market;
+    renderMarket();
+  });
+});
+
+loadData();
+</script>
+</body>
+</html>
