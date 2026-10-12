@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05T08:53:32.688389+09:00",
-  "generated_at_utc": "2026-10-04T23:55:18.256681+00:00",
+  "generated_at": "2026-10-12T09:22:20.397127+09:00",
+  "generated_at_utc": "2026-10-12T00:24:28.874063+00:00",
   "weights": {
     "value": 40,
     "growth": 40,
@@ -15,8 +15,8 @@
           "name": "SHIONOGI & CO",
           "sector": "Healthcare",
           "industry": "Drug Manufacturers - Specialty & Generic",
-          "price": 2786.0,
-          "market_cap": 2371378479104,
+          "price": 2744.5,
+          "market_cap": 2336054575104,
           "currency": "JPY",
           "total_score": 81.1,
           "axis_scores": {
@@ -27,18 +27,18 @@
           "value": {
             "trailing_pe": {
               "score": 85,
-              "note": "PER割安 (11.6)",
-              "value": 11.558248
+              "note": "PER割安 (8.9)",
+              "value": 8.865523
             },
             "forward_pe": {
               "score": 65,
-              "note": "予想PER やや割安 (14.6)",
-              "value": 14.57113
+              "note": "予想PER やや割安 (14.4)",
+              "value": 14.35408
             },
             "pbr": {
               "score": 75,
-              "note": "PBR やや割安 (1.34)",
-              "value": 1.3377502
+              "note": "PBR やや割安 (1.32)",
+              "value": 1.3178232
             },
             "peg": {
               "score": 85,
@@ -47,8 +47,8 @@
             },
             "dividend": {
               "score": 70,
-              "note": "配当利回り 273.00% (高め・要持続性確認)",
-              "value": 2.73
+              "note": "配当利回り 277.00% (高め・要持続性確認)",
+              "value": 2.77
             }
           },
           "growth": {
@@ -74,23 +74,23 @@
             },
             "target_upside": {
               "score": 80,
-              "note": "目標まで +20.5%",
-              "current": 2786.0,
-              "target": 3358.3333
+              "note": "目標まで +21.9%",
+              "current": 2744.5,
+              "target": 3345.4546
             }
           },
           "timing": {
             "fifty_two_week_position": {
               "score": 80,
-              "note": "52週下半分 (高値から-25.9%)",
+              "note": "52週下半分 (高値から-27.0%)",
               "low": 2392.5,
               "high": 3758.0,
-              "current": 2786.0
+              "current": 2744.5
             },
             "return_6m": {
               "score": 85,
-              "note": "6ヶ月 -20.4% (調整局面)",
-              "value": -0.20351024991999478
+              "note": "6ヶ月 -20.0% (調整局面)",
+              "value": -0.2004852788714151
             }
           },
           "market": "JP"
@@ -100,8 +100,8 @@
           "name": "SBI HOLDINGS INC",
           "sector": "Financial Services",
           "industry": "Financial Conglomerates",
-          "price": 3057.0,
-          "market_cap": 1976019320832,
+          "price": 3042.0,
+          "market_cap": 1966323531776,
           "currency": "JPY",
           "total_score": 80.8,
           "axis_scores": {
@@ -112,18 +112,18 @@
           "value": {
             "trailing_pe": {
               "score": 95,
-              "note": "PER非常に割安 (4.9)",
-              "value": 4.8948026
+              "note": "PER非常に割安 (4.3)",
+              "value": 4.2943053
             },
             "forward_pe": {
               "score": 95,
               "note": "予想PER非常に割安 (7.5)",
-              "value": 7.513087
+              "value": 7.476222
             },
             "pbr": {
               "score": 75,
-              "note": "PBR やや割安 (1.06)",
-              "value": 1.0593926
+              "note": "PBR やや割安 (1.05)",
+              "value": 1.0541943
             },
             "peg": {
               "score": 50,
@@ -132,8 +132,8 @@
             },
             "dividend": {
               "score": 70,
-              "note": "配当利回り 343.00% (高め・要持続性確認)",
-              "value": 3.43
+              "note": "配当利回り 345.00% (高め・要持続性確認)",
+              "value": 3.45
             }
           },
           "growth": {
@@ -159,108 +159,23 @@
             },
             "target_upside": {
               "score": 80,
-              "note": "目標まで +23.9%",
-              "current": 3057.0,
-              "target": 3787.1428
+              "note": "目標まで +27.6%",
+              "current": 3042.0,
+              "target": 3881.4285
             }
           },
           "timing": {
             "fifty_two_week_position": {
               "score": 80,
-              "note": "52週下半分 (高値から-20.9%)",
+              "note": "52週下半分 (高値から-21.3%)",
               "low": 2631.0,
               "high": 3866.0,
-              "current": 3057.0
+              "current": 3042.0
             },
             "return_6m": {
               "score": 60,
-              "note": "6ヶ月 +5.1%",
-              "value": 0.051155980345022334
-            }
-          },
-          "market": "JP"
-        },
-        {
-          "ticker": "7269.T",
-          "name": "SUZUKI MOTOR CORP",
-          "sector": "Consumer Cyclical",
-          "industry": "Auto Manufacturers",
-          "price": 1952.5,
-          "market_cap": 3766907305984,
-          "currency": "JPY",
-          "total_score": 79.9,
-          "axis_scores": {
-            "value": 80.8,
-            "growth": 83.0,
-            "timing": 72.0
-          },
-          "value": {
-            "trailing_pe": {
-              "score": 85,
-              "note": "PER割安 (8.6)",
-              "value": 8.5763855
-            },
-            "forward_pe": {
-              "score": 80,
-              "note": "予想PER割安 (11.1)",
-              "value": 11.078014
-            },
-            "pbr": {
-              "score": 75,
-              "note": "PBR やや割安 (1.06)",
-              "value": 1.0643187
-            },
-            "peg": {
-              "score": 85,
-              "note": "PEG割安 (0.56)",
-              "value": 0.56
-            },
-            "dividend": {
-              "score": 70,
-              "note": "配当利回り 266.00% (高め・要持続性確認)",
-              "value": 2.66
-            }
-          },
-          "growth": {
-            "revenue_growth": {
-              "score": 85,
-              "note": "売上成長 +22.0%",
-              "value": 0.22
-            },
-            "earnings_growth": {
-              "score": 95,
-              "note": "利益成長 +80.0% (急成長)",
-              "value": 0.8
-            },
-            "roe": {
-              "score": 85,
-              "note": "ROE 15.3% (高効率)",
-              "value": 0.1532
-            },
-            "operating_margin": {
-              "score": 60,
-              "note": "営業利益率 9.3%",
-              "value": 0.09263
-            },
-            "target_upside": {
-              "score": 80,
-              "note": "目標まで +30.9%",
-              "current": 1952.5,
-              "target": 2556.4707
-            }
-          },
-          "timing": {
-            "fifty_two_week_position": {
-              "score": 80,
-              "note": "52週下半分 (高値から-21.0%)",
-              "low": 1670.0,
-              "high": 2473.0,
-              "current": 1952.5
-            },
-            "return_6m": {
-              "score": 60,
-              "note": "6ヶ月 +6.3%",
-              "value": 0.06284515316381367
+              "note": "6ヶ月 -1.0%",
+              "value": -0.010464823822291414
             }
           },
           "market": "JP"
@@ -270,30 +185,30 @@
           "name": "DAIWA HOUSE INDUSTRY CO",
           "sector": "Real Estate",
           "industry": "Real Estate - Development",
-          "price": 2144.5,
-          "market_cap": 2657208238080,
+          "price": 2158.0,
+          "market_cap": 2847826509824,
           "currency": "JPY",
-          "total_score": 78.8,
+          "total_score": 80.0,
           "axis_scores": {
-            "value": 89.8,
+            "value": 92.8,
             "growth": 65.2,
             "timing": 84.0
           },
           "value": {
             "trailing_pe": {
               "score": 95,
-              "note": "PER非常に割安 (7.6)",
-              "value": 7.569981
+              "note": "PER非常に割安 (7.5)",
+              "value": 7.473076
             },
             "forward_pe": {
               "score": 95,
               "note": "予想PER非常に割安 (4.6)",
-              "value": 4.555884
+              "value": 4.5845637
             },
             "pbr": {
-              "score": 75,
-              "note": "PBR大幅割安 (要注意 0.46)",
-              "value": 0.45648792
+              "score": 90,
+              "note": "PBR割安(資産割れ 0.92)",
+              "value": 0.91872317
             },
             "peg": {
               "score": 95,
@@ -302,8 +217,8 @@
             },
             "dividend": {
               "score": 70,
-              "note": "配当利回り 429.00% (高め・要持続性確認)",
-              "value": 4.29
+              "note": "配当利回り 426.00% (高め・要持続性確認)",
+              "value": 4.26
             }
           },
           "growth": {
@@ -329,193 +244,23 @@
             },
             "target_upside": {
               "score": 65,
-              "note": "目標まで +18.4%",
-              "current": 2144.5,
-              "target": 2540.0
+              "note": "目標まで +18.0%",
+              "current": 2158.0,
+              "target": 2545.5557
             }
           },
           "timing": {
             "fifty_two_week_position": {
               "score": 90,
-              "note": "52週下位20%圏 (高値から-26.1%)",
+              "note": "52週下位20%圏 (高値から-25.7%)",
               "low": 2040.5,
               "high": 2902.5,
-              "current": 2144.5
+              "current": 2158.0
             },
             "return_6m": {
               "score": 75,
-              "note": "6ヶ月 -11.0%",
-              "value": -0.10987679254669036
-            }
-          },
-          "market": "JP"
-        },
-        {
-          "ticker": "7203.T",
-          "name": "TOYOTA MOTOR CORP",
-          "sector": "Consumer Cyclical",
-          "industry": "Auto Manufacturers",
-          "price": 2856.5,
-          "market_cap": 33826197733376,
-          "currency": "JPY",
-          "total_score": 77.2,
-          "axis_scores": {
-            "value": 77.0,
-            "growth": 74.0,
-            "timing": 84.0
-          },
-          "value": {
-            "trailing_pe": {
-              "score": 85,
-              "note": "PER割安 (8.1)",
-              "value": 8.129375
-            },
-            "forward_pe": {
-              "score": 95,
-              "note": "予想PER非常に割安 (8.8)",
-              "value": 8.810375
-            },
-            "pbr": {
-              "score": 90,
-              "note": "PBR割安(資産割れ 0.91)",
-              "value": 0.9066539
-            },
-            "peg": {
-              "score": 40,
-              "note": "PEG やや割高 (1.56)",
-              "value": 1.56
-            },
-            "dividend": {
-              "score": 70,
-              "note": "配当利回り 350.00% (高め・要持続性確認)",
-              "value": 3.5
-            }
-          },
-          "growth": {
-            "revenue_growth": {
-              "score": 70,
-              "note": "売上成長 +10.4%",
-              "value": 0.104
-            },
-            "earnings_growth": {
-              "score": 95,
-              "note": "利益成長 +86.9% (急成長)",
-              "value": 0.869
-            },
-            "roe": {
-              "score": 70,
-              "note": "ROE 12.4%",
-              "value": 0.12404
-            },
-            "operating_margin": {
-              "score": 45,
-              "note": "営業利益率 7.9%",
-              "value": 0.07863
-            },
-            "target_upside": {
-              "score": 80,
-              "note": "目標まで +29.5%",
-              "current": 2856.5,
-              "target": 3698.6316
-            }
-          },
-          "timing": {
-            "fifty_two_week_position": {
-              "score": 90,
-              "note": "52週下位20%圏 (高値から-28.6%)",
-              "low": 2686.0,
-              "high": 4000.0,
-              "current": 2856.5
-            },
-            "return_6m": {
-              "score": 75,
-              "note": "6ヶ月 -10.9%",
-              "value": -0.10939983832491207
-            }
-          },
-          "market": "JP"
-        },
-        {
-          "ticker": "2502.T",
-          "name": "ASAHI GROUP HLDGS",
-          "sector": "Consumer Defensive",
-          "industry": "Beverages - Brewers",
-          "price": 1572.0,
-          "market_cap": 2299305132032,
-          "currency": "JPY",
-          "total_score": 75.6,
-          "axis_scores": {
-            "value": 80.8,
-            "growth": 72.2,
-            "timing": 72.0
-          },
-          "value": {
-            "trailing_pe": {
-              "score": 70,
-              "note": "PER やや割安 (14.3)",
-              "value": 14.303912
-            },
-            "forward_pe": {
-              "score": 80,
-              "note": "予想PER割安 (11.0)",
-              "value": 10.987628
-            },
-            "pbr": {
-              "score": 90,
-              "note": "PBR割安(資産割れ 0.72)",
-              "value": 0.7210457
-            },
-            "peg": {
-              "score": 85,
-              "note": "PEG割安 (0.79)",
-              "value": 0.79
-            },
-            "dividend": {
-              "score": 70,
-              "note": "配当利回り 394.00% (高め・要持続性確認)",
-              "value": 3.94
-            }
-          },
-          "growth": {
-            "revenue_growth": {
-              "score": 70,
-              "note": "売上成長 +12.0%",
-              "value": 0.12
-            },
-            "earnings_growth": {
-              "score": 95,
-              "note": "利益成長 +114.2% (急成長)",
-              "value": 1.142
-            },
-            "roe": {
-              "score": 50,
-              "note": "ROE 5.6%",
-              "value": 0.05574
-            },
-            "operating_margin": {
-              "score": 60,
-              "note": "営業利益率 13.6%",
-              "value": 0.13619
-            },
-            "target_upside": {
-              "score": 80,
-              "note": "目標まで +30.8%",
-              "current": 1572.0,
-              "target": 2055.8
-            }
-          },
-          "timing": {
-            "fifty_two_week_position": {
-              "score": 80,
-              "note": "52週下半分 (高値から-14.4%)",
-              "low": 1452.5,
-              "high": 1835.5,
-              "current": 1572.0
-            },
-            "return_6m": {
-              "score": 60,
-              "note": "6ヶ月 -1.3%",
-              "value": -0.012605212117197229
+              "note": "6ヶ月 -10.1%",
+              "value": -0.10050218886530593
             }
           },
           "market": "JP"
@@ -525,30 +270,30 @@
           "name": "DOWA HOLDINGS",
           "sector": "Basic Materials",
           "industry": "Other Industrial Metals & Mining",
-          "price": 8703.0,
-          "market_cap": 514767454208,
+          "price": 8482.0,
+          "market_cap": 501695676416,
           "currency": "JPY",
-          "total_score": 75.3,
+          "total_score": 79.7,
           "axis_scores": {
-            "value": 72.8,
+            "value": 80.8,
             "growth": 85.5,
-            "timing": 60.0
+            "timing": 66.0
           },
           "value": {
             "trailing_pe": {
-              "score": 85,
-              "note": "PER割安 (8.3)",
-              "value": 8.291888
+              "score": 95,
+              "note": "PER非常に割安 (6.3)",
+              "value": 6.34045
             },
             "forward_pe": {
-              "score": 45,
-              "note": "予想PER 平均 (18.0)",
-              "value": 18.005587
+              "score": 65,
+              "note": "予想PER やや割安 (17.5)",
+              "value": 17.54836
             },
             "pbr": {
               "score": 75,
-              "note": "PBR やや割安 (1.12)",
-              "value": 1.1178398
+              "note": "PBR やや割安 (1.09)",
+              "value": 1.0894539
             },
             "peg": {
               "score": 95,
@@ -557,8 +302,8 @@
             },
             "dividend": {
               "score": 70,
-              "note": "配当利回り 388.00% (高め・要持続性確認)",
-              "value": 3.88
+              "note": "配当利回り 398.00% (高め・要持続性確認)",
+              "value": 3.98
             }
           },
           "growth": {
@@ -584,108 +329,278 @@
             },
             "target_upside": {
               "score": 80,
-              "note": "目標まで +20.1%",
-              "current": 8703.0,
+              "note": "目標まで +23.2%",
+              "current": 8482.0,
               "target": 10452.857
             }
           },
           "timing": {
             "fifty_two_week_position": {
               "score": 60,
-              "note": "52週中位 (高値から-29.7%)",
+              "note": "52週中位 (高値から-31.5%)",
               "low": 5334.0,
               "high": 12380.0,
-              "current": 8703.0
+              "current": 8482.0
             },
             "return_6m": {
-              "score": 60,
-              "note": "6ヶ月 -2.4%",
-              "value": -0.023561090541905028
+              "score": 75,
+              "note": "6ヶ月 -13.2%",
+              "value": -0.13174326952605175
             }
           },
           "market": "JP"
         },
         {
-          "ticker": "6326.T",
-          "name": "KUBOTA CORP",
-          "sector": "Industrials",
-          "industry": "Farm & Heavy Construction Machinery",
-          "price": 2683.0,
-          "market_cap": 3022110851072,
+          "ticker": "7203.T",
+          "name": "TOYOTA MOTOR CORP",
+          "sector": "Consumer Cyclical",
+          "industry": "Auto Manufacturers",
+          "price": 2910.5,
+          "market_cap": 34465657126912,
           "currency": "JPY",
-          "total_score": 75.2,
+          "total_score": 77.2,
           "axis_scores": {
-            "value": 75.8,
-            "growth": 82.2,
-            "timing": 60.0
+            "value": 77.0,
+            "growth": 74.0,
+            "timing": 84.0
           },
           "value": {
             "trailing_pe": {
               "score": 85,
-              "note": "PER割安 (11.4)",
-              "value": 11.413621
+              "note": "PER割安 (8.3)",
+              "value": 8.283055
             },
             "forward_pe": {
-              "score": 80,
-              "note": "予想PER割安 (13.6)",
-              "value": 13.631744
+              "score": 95,
+              "note": "予想PER非常に割安 (9.0)",
+              "value": 8.97693
             },
             "pbr": {
-              "score": 75,
-              "note": "PBR やや割安 (1.08)",
-              "value": 1.0813469
+              "score": 90,
+              "note": "PBR割安(資産割れ 0.92)",
+              "value": 0.9237935
             },
             "peg": {
-              "score": 65,
-              "note": "PEG 適正 (1.13)",
-              "value": 1.13
+              "score": 40,
+              "note": "PEG やや割高 (1.56)",
+              "value": 1.56
             },
             "dividend": {
               "score": 70,
-              "note": "配当利回り 194.00% (高め・要持続性確認)",
-              "value": 1.94
+              "note": "配当利回り 344.00% (高め・要持続性確認)",
+              "value": 3.44
+            }
+          },
+          "growth": {
+            "revenue_growth": {
+              "score": 70,
+              "note": "売上成長 +10.4%",
+              "value": 0.104
+            },
+            "earnings_growth": {
+              "score": 95,
+              "note": "利益成長 +86.9% (急成長)",
+              "value": 0.869
+            },
+            "roe": {
+              "score": 70,
+              "note": "ROE 12.4%",
+              "value": 0.12404
+            },
+            "operating_margin": {
+              "score": 45,
+              "note": "営業利益率 7.9%",
+              "value": 0.07863
+            },
+            "target_upside": {
+              "score": 80,
+              "note": "目標まで +27.1%",
+              "current": 2910.5,
+              "target": 3698.6316
+            }
+          },
+          "timing": {
+            "fifty_two_week_position": {
+              "score": 90,
+              "note": "52週下位20%圏 (高値から-27.2%)",
+              "low": 2686.0,
+              "high": 4000.0,
+              "current": 2910.5
+            },
+            "return_6m": {
+              "score": 75,
+              "note": "6ヶ月 -11.1%",
+              "value": -0.11136077532665556
+            }
+          },
+          "market": "JP"
+        },
+        {
+          "ticker": "7269.T",
+          "name": "SUZUKI MOTOR CORP",
+          "sector": "Consumer Cyclical",
+          "industry": "Auto Manufacturers",
+          "price": 2039.0,
+          "market_cap": 3933789487104,
+          "currency": "JPY",
+          "total_score": 76.7,
+          "axis_scores": {
+            "value": 82.8,
+            "growth": 83.0,
+            "timing": 52.0
+          },
+          "value": {
+            "trailing_pe": {
+              "score": 95,
+              "note": "PER非常に割安 (7.6)",
+              "value": 7.55353
+            },
+            "forward_pe": {
+              "score": 80,
+              "note": "予想PER割安 (11.6)",
+              "value": 11.568794
+            },
+            "pbr": {
+              "score": 75,
+              "note": "PBR やや割安 (1.11)",
+              "value": 1.1114703
+            },
+            "peg": {
+              "score": 85,
+              "note": "PEG割安 (0.56)",
+              "value": 0.56
+            },
+            "dividend": {
+              "score": 70,
+              "note": "配当利回り 255.00% (高め・要持続性確認)",
+              "value": 2.55
             }
           },
           "growth": {
             "revenue_growth": {
               "score": 85,
-              "note": "売上成長 +18.6%",
-              "value": 0.186
+              "note": "売上成長 +22.0%",
+              "value": 0.22
             },
             "earnings_growth": {
               "score": 95,
-              "note": "利益成長 +98.3% (急成長)",
-              "value": 0.983
+              "note": "利益成長 +80.0% (急成長)",
+              "value": 0.8
             },
             "roe": {
-              "score": 70,
-              "note": "ROE 10.0%",
-              "value": 0.10014
+              "score": 85,
+              "note": "ROE 15.3% (高効率)",
+              "value": 0.1532
             },
             "operating_margin": {
-              "score": 75,
-              "note": "営業利益率 15.6%",
-              "value": 0.15623
+              "score": 60,
+              "note": "営業利益率 9.3%",
+              "value": 0.09263
             },
             "target_upside": {
               "score": 80,
-              "note": "目標まで +22.1%",
-              "current": 2683.0,
-              "target": 3277.2727
+              "note": "目標まで +25.4%",
+              "current": 2039.0,
+              "target": 2556.4707
             }
           },
           "timing": {
             "fifty_two_week_position": {
               "score": 60,
-              "note": "52週中位 (高値から-17.9%)",
-              "low": 1851.5,
-              "high": 3268.0,
-              "current": 2683.0
+              "note": "52週中位 (高値から-17.5%)",
+              "low": 1670.0,
+              "high": 2473.0,
+              "current": 2039.0
+            },
+            "return_6m": {
+              "score": 40,
+              "note": "6ヶ月 +12.1% (上昇局面)",
+              "value": 0.12107903943454645
+            }
+          },
+          "market": "JP"
+        },
+        {
+          "ticker": "2502.T",
+          "name": "ASAHI GROUP HLDGS",
+          "sector": "Consumer Defensive",
+          "industry": "Beverages - Brewers",
+          "price": 1580.0,
+          "market_cap": 2311006453760,
+          "currency": "JPY",
+          "total_score": 75.6,
+          "axis_scores": {
+            "value": 80.8,
+            "growth": 72.2,
+            "timing": 72.0
+          },
+          "value": {
+            "trailing_pe": {
+              "score": 70,
+              "note": "PER やや割安 (14.4)",
+              "value": 14.376706
+            },
+            "forward_pe": {
+              "score": 80,
+              "note": "予想PER割安 (11.0)",
+              "value": 11.043545
+            },
+            "pbr": {
+              "score": 90,
+              "note": "PBR割安(資産割れ 0.72)",
+              "value": 0.7247151
+            },
+            "peg": {
+              "score": 85,
+              "note": "PEG割安 (0.79)",
+              "value": 0.79
+            },
+            "dividend": {
+              "score": 70,
+              "note": "配当利回り 392.00% (高め・要持続性確認)",
+              "value": 3.92
+            }
+          },
+          "growth": {
+            "revenue_growth": {
+              "score": 70,
+              "note": "売上成長 +12.0%",
+              "value": 0.12
+            },
+            "earnings_growth": {
+              "score": 95,
+              "note": "利益成長 +114.2% (急成長)",
+              "value": 1.142
+            },
+            "roe": {
+              "score": 50,
+              "note": "ROE 5.6%",
+              "value": 0.05574
+            },
+            "operating_margin": {
+              "score": 60,
+              "note": "営業利益率 13.6%",
+              "value": 0.13619
+            },
+            "target_upside": {
+              "score": 80,
+              "note": "目標まで +32.0%",
+              "current": 1580.0,
+              "target": 2085.1428
+            }
+          },
+          "timing": {
+            "fifty_two_week_position": {
+              "score": 80,
+              "note": "52週下半分 (高値から-13.9%)",
+              "low": 1452.5,
+              "high": 1835.5,
+              "current": 1580.0
             },
             "return_6m": {
               "score": 60,
-              "note": "6ヶ月 +7.8%",
-              "value": 0.07847684819581602
+              "note": "6ヶ月 -1.1%",
+              "value": -0.010635808759225984
             }
           },
           "market": "JP"
@@ -695,30 +610,30 @@
           "name": "OBAYASHI CORP",
           "sector": "Industrials",
           "industry": "Engineering & Construction",
-          "price": 2965.0,
-          "market_cap": 2038204727296,
+          "price": 2850.5,
+          "market_cap": 1959494942720,
           "currency": "JPY",
-          "total_score": 74.0,
+          "total_score": 75.2,
           "axis_scores": {
-            "value": 63.2,
+            "value": 66.2,
             "growth": 80.8,
             "timing": 82.0
           },
           "value": {
             "trailing_pe": {
-              "score": 70,
-              "note": "PER やや割安 (12.0)",
-              "value": 12.003077
+              "score": 85,
+              "note": "PER割安 (11.6)",
+              "value": 11.584102
             },
             "forward_pe": {
               "score": 45,
-              "note": "予想PER 平均 (21.5)",
-              "value": 21.491735
+              "note": "予想PER 平均 (20.7)",
+              "value": 20.661785
             },
             "pbr": {
               "score": 55,
-              "note": "PBR 平均 (1.64)",
-              "value": 1.6378555
+              "note": "PBR 平均 (1.57)",
+              "value": 1.5746062
             },
             "peg": {
               "score": 85,
@@ -727,8 +642,8 @@
             },
             "dividend": {
               "score": 70,
-              "note": "配当利回り 317.00% (高め・要持続性確認)",
-              "value": 3.17
+              "note": "配当利回り 330.00% (高め・要持続性確認)",
+              "value": 3.3
             }
           },
           "growth": {
@@ -754,23 +669,108 @@
             },
             "target_upside": {
               "score": 80,
-              "note": "目標まで +28.6%",
-              "current": 2965.0,
-              "target": 3812.5
+              "note": "目標まで +30.6%",
+              "current": 2850.5,
+              "target": 3722.2222
             }
           },
           "timing": {
             "fifty_two_week_position": {
               "score": 80,
-              "note": "52週下半分 (高値から-33.2%)",
-              "low": 2300.0,
+              "note": "52週下半分 (高値から-35.8%)",
+              "low": 2334.0,
               "high": 4439.0,
-              "current": 2965.0
+              "current": 2850.5
             },
             "return_6m": {
               "score": 85,
-              "note": "6ヶ月 -20.3% (調整局面)",
-              "value": -0.20272362148173728
+              "note": "6ヶ月 -25.1% (調整局面)",
+              "value": -0.2509639574879078
+            }
+          },
+          "market": "JP"
+        },
+        {
+          "ticker": "6326.T",
+          "name": "KUBOTA CORP",
+          "sector": "Industrials",
+          "industry": "Farm & Heavy Construction Machinery",
+          "price": 2626.5,
+          "market_cap": 2958469890048,
+          "currency": "JPY",
+          "total_score": 75.2,
+          "axis_scores": {
+            "value": 75.8,
+            "growth": 82.2,
+            "timing": 60.0
+          },
+          "value": {
+            "trailing_pe": {
+              "score": 85,
+              "note": "PER割安 (11.2)",
+              "value": 11.190882
+            },
+            "forward_pe": {
+              "score": 80,
+              "note": "予想PER割安 (13.3)",
+              "value": 13.34468
+            },
+            "pbr": {
+              "score": 75,
+              "note": "PBR やや割安 (1.06)",
+              "value": 1.0585753
+            },
+            "peg": {
+              "score": 65,
+              "note": "PEG 適正 (1.10)",
+              "value": 1.1
+            },
+            "dividend": {
+              "score": 70,
+              "note": "配当利回り 198.00% (高め・要持続性確認)",
+              "value": 1.98
+            }
+          },
+          "growth": {
+            "revenue_growth": {
+              "score": 85,
+              "note": "売上成長 +18.6%",
+              "value": 0.186
+            },
+            "earnings_growth": {
+              "score": 95,
+              "note": "利益成長 +98.3% (急成長)",
+              "value": 0.983
+            },
+            "roe": {
+              "score": 70,
+              "note": "ROE 10.0%",
+              "value": 0.10014
+            },
+            "operating_margin": {
+              "score": 75,
+              "note": "営業利益率 15.6%",
+              "value": 0.15623
+            },
+            "target_upside": {
+              "score": 80,
+              "note": "目標まで +21.7%",
+              "current": 2626.5,
+              "target": 3195.4546
+            }
+          },
+          "timing": {
+            "fifty_two_week_position": {
+              "score": 60,
+              "note": "52週中位 (高値から-19.6%)",
+              "low": 1851.5,
+              "high": 3268.0,
+              "current": 2626.5
+            },
+            "return_6m": {
+              "score": 60,
+              "note": "6ヶ月 -0.8%",
+              "value": -0.00802266376927352
             }
           },
           "market": "JP"
@@ -780,30 +780,30 @@
           "name": "SUMITOMO METAL MINING CO",
           "sector": "Basic Materials",
           "industry": "Other Industrial Metals & Mining",
-          "price": 9724.0,
-          "market_cap": 2610774409216,
+          "price": 9406.0,
+          "market_cap": 2525395419136,
           "currency": "JPY",
-          "total_score": 73.8,
+          "total_score": 75.0,
           "axis_scores": {
-            "value": 69.8,
+            "value": 72.8,
             "growth": 84.8,
             "timing": 60.0
           },
           "value": {
             "trailing_pe": {
-              "score": 70,
-              "note": "PER やや割安 (15.0)",
-              "value": 14.970824
+              "score": 85,
+              "note": "PER割安 (10.7)",
+              "value": 10.738914
             },
             "forward_pe": {
               "score": 45,
-              "note": "予想PER 平均 (23.9)",
-              "value": 23.913631
+              "note": "予想PER 平均 (23.1)",
+              "value": 23.131594
             },
             "pbr": {
               "score": 75,
-              "note": "PBR やや割安 (1.23)",
-              "value": 1.2257648
+              "note": "PBR やや割安 (1.19)",
+              "value": 1.1856791
             },
             "peg": {
               "score": 95,
@@ -812,8 +812,8 @@
             },
             "dividend": {
               "score": 70,
-              "note": "配当利回り 214.00% (高め・要持続性確認)",
-              "value": 2.14
+              "note": "配当利回り 221.00% (高め・要持続性確認)",
+              "value": 2.21
             }
           },
           "growth": {
@@ -839,23 +839,23 @@
             },
             "target_upside": {
               "score": 80,
-              "note": "目標まで +23.4%",
-              "current": 9724.0,
+              "note": "目標まで +27.6%",
+              "current": 9406.0,
               "target": 11998.75
             }
           },
           "timing": {
             "fifty_two_week_position": {
               "score": 60,
-              "note": "52週中位 (高値から-26.9%)",
+              "note": "52週中位 (高値から-29.3%)",
               "low": 4627.0,
               "high": 13300.0,
-              "current": 9724.0
+              "current": 9406.0
             },
             "return_6m": {
               "score": 60,
-              "note": "6ヶ月 +6.7%",
-              "value": 0.06694165869999824
+              "note": "6ヶ月 -4.2%",
+              "value": -0.041593671484365324
             }
           },
           "market": "JP"
@@ -866,214 +866,44 @@
     "US": {
       "top": [
         {
-          "ticker": "BAC",
-          "name": "Bank of America Corporation",
-          "sector": "Financial Services",
-          "industry": "Banks - Diversified",
-          "price": 53.75,
-          "market_cap": 375860232192,
-          "currency": "USD",
-          "total_score": 78.3,
-          "axis_scores": {
-            "value": 77.8,
-            "growth": 82.0,
-            "timing": 72.0
-          },
-          "value": {
-            "trailing_pe": {
-              "score": 70,
-              "note": "PER やや割安 (12.4)",
-              "value": 12.413395
-            },
-            "forward_pe": {
-              "score": 80,
-              "note": "予想PER割安 (10.2)",
-              "value": 10.222246
-            },
-            "pbr": {
-              "score": 75,
-              "note": "PBR やや割安 (1.37)",
-              "value": 1.3662244
-            },
-            "peg": {
-              "score": 85,
-              "note": "PEG割安 (0.85)",
-              "value": 0.85
-            },
-            "dividend": {
-              "score": 70,
-              "note": "配当利回り 238.00% (高め・要持続性確認)",
-              "value": 2.38
-            }
-          },
-          "growth": {
-            "revenue_growth": {
-              "score": 85,
-              "note": "売上成長 +16.8%",
-              "value": 0.168
-            },
-            "earnings_growth": {
-              "score": 85,
-              "note": "利益成長 +34.1%",
-              "value": 0.341
-            },
-            "roe": {
-              "score": 70,
-              "note": "ROE 11.2%",
-              "value": 0.111990005
-            },
-            "operating_margin": {
-              "score": 90,
-              "note": "営業利益率 38.3% (高収益体質)",
-              "value": 0.38305
-            },
-            "target_upside": {
-              "score": 80,
-              "note": "目標まで +26.4%",
-              "current": 53.75,
-              "target": 67.95238
-            }
-          },
-          "timing": {
-            "fifty_two_week_position": {
-              "score": 80,
-              "note": "52週下半分 (高値から-17.6%)",
-              "low": 46.12,
-              "high": 65.23,
-              "current": 53.75
-            },
-            "return_6m": {
-              "score": 60,
-              "note": "6ヶ月 +8.5%",
-              "value": 0.08479687312819917
-            }
-          },
-          "market": "US"
-        },
-        {
-          "ticker": "GS",
-          "name": "Goldman Sachs Group, Inc. (The)",
-          "sector": "Financial Services",
-          "industry": "Capital Markets",
-          "price": 902.56,
-          "market_cap": 262799654912,
-          "currency": "USD",
-          "total_score": 77.9,
-          "axis_scores": {
-            "value": 68.8,
-            "growth": 90.0,
-            "timing": 72.0
-          },
-          "value": {
-            "trailing_pe": {
-              "score": 70,
-              "note": "PER やや割安 (13.9)",
-              "value": 13.939151
-            },
-            "forward_pe": {
-              "score": 80,
-              "note": "予想PER割安 (12.4)",
-              "value": 12.35921
-            },
-            "pbr": {
-              "score": 55,
-              "note": "PBR 平均 (2.49)",
-              "value": 2.492922
-            },
-            "peg": {
-              "score": 65,
-              "note": "PEG 適正 (1.12)",
-              "value": 1.12
-            },
-            "dividend": {
-              "score": 70,
-              "note": "配当利回り 222.00% (高め・要持続性確認)",
-              "value": 2.22
-            }
-          },
-          "growth": {
-            "revenue_growth": {
-              "score": 95,
-              "note": "売上成長 +42.5% (急成長)",
-              "value": 0.425
-            },
-            "earnings_growth": {
-              "score": 95,
-              "note": "利益成長 +92.3% (急成長)",
-              "value": 0.923
-            },
-            "roe": {
-              "score": 85,
-              "note": "ROE 16.9% (高効率)",
-              "value": 0.16902
-            },
-            "operating_margin": {
-              "score": 90,
-              "note": "営業利益率 42.2% (高収益体質)",
-              "value": 0.42176998
-            },
-            "target_upside": {
-              "score": 80,
-              "note": "目標まで +23.7%",
-              "current": 902.56,
-              "target": 1116.75
-            }
-          },
-          "timing": {
-            "fifty_two_week_position": {
-              "score": 80,
-              "note": "52週下半分 (高値から-21.8%)",
-              "low": 740.01,
-              "high": 1153.99,
-              "current": 902.56
-            },
-            "return_6m": {
-              "score": 60,
-              "note": "6ヶ月 +5.2%",
-              "value": 0.05187643896811922
-            }
-          },
-          "market": "US"
-        },
-        {
           "ticker": "TFC",
           "name": "Truist Financial Corporation",
           "sector": "Financial Services",
           "industry": "Banks - Regional",
-          "price": 46.45,
-          "market_cap": 56744538112,
+          "price": 46.11,
+          "market_cap": 56329187328,
           "currency": "USD",
-          "total_score": 76.5,
+          "total_score": 77.7,
           "axis_scores": {
             "value": 83.2,
             "growth": 72.0,
-            "timing": 72.0
+            "timing": 78.0
           },
           "value": {
             "trailing_pe": {
               "score": 85,
-              "note": "PER割安 (10.7)",
-              "value": 10.678162
+              "note": "PER割安 (10.6)",
+              "value": 10.6
             },
             "forward_pe": {
               "score": 95,
               "note": "予想PER非常に割安 (9.3)",
-              "value": 9.3346
+              "value": 9.251085
             },
             "pbr": {
               "score": 90,
-              "note": "PBR割安(資産割れ 0.97)",
-              "value": 0.9669429
+              "note": "PBR割安(資産割れ 0.96)",
+              "value": 0.95986515
             },
             "peg": {
               "score": 65,
-              "note": "PEG 適正 (1.05)",
-              "value": 1.05
+              "note": "PEG 適正 (1.04)",
+              "value": 1.04
             },
             "dividend": {
               "score": 70,
-              "note": "配当利回り 448.00% (高め・要持続性確認)",
-              "value": 4.48
+              "note": "配当利回り 451.00% (高め・要持続性確認)",
+              "value": 4.51
             }
           },
           "growth": {
@@ -1099,23 +929,23 @@
             },
             "target_upside": {
               "score": 65,
-              "note": "目標まで +17.5%",
-              "current": 46.45,
-              "target": 54.59167
+              "note": "目標まで +17.2%",
+              "current": 46.11,
+              "target": 54.03421
             }
           },
           "timing": {
             "fifty_two_week_position": {
               "score": 80,
-              "note": "52週下半分 (高値から-17.3%)",
+              "note": "52週下半分 (高値から-18.0%)",
               "low": 40.78,
               "high": 56.2,
-              "current": 46.45
+              "current": 46.11
             },
             "return_6m": {
-              "score": 60,
-              "note": "6ヶ月 -0.5%",
-              "value": -0.004913085699758013
+              "score": 75,
+              "note": "6ヶ月 -5.1%",
+              "value": -0.051230950969964995
             }
           },
           "market": "US"
@@ -1125,25 +955,25 @@
           "name": "Western Digital Corporation",
           "sector": "Technology",
           "industry": "Computer Hardware",
-          "price": 415.29,
-          "market_cap": 149729050624,
+          "price": 397.28,
+          "market_cap": 148711145472,
           "currency": "USD",
-          "total_score": 75.6,
+          "total_score": 77.2,
           "axis_scores": {
             "value": 72.8,
             "growth": 94.2,
-            "timing": 44.0
+            "timing": 52.0
           },
           "value": {
             "trailing_pe": {
               "score": 70,
-              "note": "PER やや割安 (15.4)",
-              "value": 15.426821
+              "note": "PER やや割安 (14.8)",
+              "value": 14.757801
             },
             "forward_pe": {
               "score": 80,
-              "note": "予想PER割安 (13.1)",
-              "value": 13.0801935
+              "note": "予想PER割安 (12.4)",
+              "value": 12.398135
             },
             "pbr": {
               "score": 50,
@@ -1152,13 +982,13 @@
             },
             "peg": {
               "score": 85,
-              "note": "PEG割安 (0.79)",
-              "value": 0.79
+              "note": "PEG割安 (0.76)",
+              "value": 0.76
             },
             "dividend": {
               "score": 70,
-              "note": "配当利回り 14.00% (高め・要持続性確認)",
-              "value": 0.14
+              "note": "配当利回り 15.00% (高め・要持続性確認)",
+              "value": 0.15
             }
           },
           "growth": {
@@ -1184,23 +1014,448 @@
             },
             "target_upside": {
               "score": 95,
-              "note": "目標まで +60.1% (大幅上振れ余地)",
-              "current": 415.29,
-              "target": 664.9167
+              "note": "目標まで +68.8% (大幅上振れ余地)",
+              "current": 397.28,
+              "target": 670.7917
             }
           },
           "timing": {
             "fifty_two_week_position": {
               "score": 60,
-              "note": "52週中位 (高値から-48.1%)",
+              "note": "52週中位 (高値から-50.3%)",
               "low": 112.52,
               "high": 799.87,
-              "current": 415.29
+              "current": 397.28
             },
             "return_6m": {
-              "score": 20,
-              "note": "6ヶ月 +36.6% (急騰中)",
-              "value": 0.3662062455725523
+              "score": 40,
+              "note": "6ヶ月 +15.7% (上昇局面)",
+              "value": 0.15747350997882004
+            }
+          },
+          "market": "US"
+        },
+        {
+          "ticker": "GS",
+          "name": "Goldman Sachs Group, Inc. (The)",
+          "sector": "Financial Services",
+          "industry": "Capital Markets",
+          "price": 895.32,
+          "market_cap": 260691574784,
+          "currency": "USD",
+          "total_score": 77.0,
+          "axis_scores": {
+            "value": 68.8,
+            "growth": 87.8,
+            "timing": 72.0
+          },
+          "value": {
+            "trailing_pe": {
+              "score": 70,
+              "note": "PER やや割安 (13.8)",
+              "value": 13.827336
+            },
+            "forward_pe": {
+              "score": 80,
+              "note": "予想PER割安 (12.4)",
+              "value": 12.406834
+            },
+            "pbr": {
+              "score": 55,
+              "note": "PBR 平均 (2.47)",
+              "value": 2.472925
+            },
+            "peg": {
+              "score": 65,
+              "note": "PEG 適正 (1.12)",
+              "value": 1.12
+            },
+            "dividend": {
+              "score": 70,
+              "note": "配当利回り 223.00% (高め・要持続性確認)",
+              "value": 2.23
+            }
+          },
+          "growth": {
+            "revenue_growth": {
+              "score": 95,
+              "note": "売上成長 +42.5% (急成長)",
+              "value": 0.425
+            },
+            "earnings_growth": {
+              "score": 95,
+              "note": "利益成長 +92.3% (急成長)",
+              "value": 0.923
+            },
+            "roe": {
+              "score": 85,
+              "note": "ROE 16.9% (高効率)",
+              "value": 0.16902
+            },
+            "operating_margin": {
+              "score": 90,
+              "note": "営業利益率 42.2% (高収益体質)",
+              "value": 0.42176998
+            },
+            "target_upside": {
+              "score": 65,
+              "note": "目標まで +19.4%",
+              "current": 895.32,
+              "target": 1069.0952
+            }
+          },
+          "timing": {
+            "fifty_two_week_position": {
+              "score": 80,
+              "note": "52週下半分 (高値から-22.4%)",
+              "low": 740.01,
+              "high": 1153.99,
+              "current": 895.32
+            },
+            "return_6m": {
+              "score": 60,
+              "note": "6ヶ月 -0.5%",
+              "value": -0.0045493466934836135
+            }
+          },
+          "market": "US"
+        },
+        {
+          "ticker": "T",
+          "name": "AT&T Inc.",
+          "sector": "Communication Services",
+          "industry": "Telecom Services",
+          "price": 22.18,
+          "market_cap": 151985913856,
+          "currency": "USD",
+          "total_score": 76.1,
+          "axis_scores": {
+            "value": 82.2,
+            "growth": 69.0,
+            "timing": 78.0
+          },
+          "value": {
+            "trailing_pe": {
+              "score": 95,
+              "note": "PER非常に割安 (7.3)",
+              "value": 7.3201323
+            },
+            "forward_pe": {
+              "score": 95,
+              "note": "予想PER非常に割安 (8.6)",
+              "value": 8.6352215
+            },
+            "pbr": {
+              "score": 75,
+              "note": "PBR やや割安 (1.38)",
+              "value": 1.3814151
+            },
+            "peg": {
+              "score": 65,
+              "note": "PEG 適正 (1.35)",
+              "value": 1.35
+            },
+            "dividend": {
+              "score": 70,
+              "note": "配当利回り 500.00% (高め・要持続性確認)",
+              "value": 5.0
+            }
+          },
+          "growth": {
+            "revenue_growth": {
+              "score": 55,
+              "note": "売上成長 +2.3% (微増)",
+              "value": 0.023
+            },
+            "earnings_growth": {
+              "score": 60,
+              "note": "利益成長 +6.2%",
+              "value": 0.062
+            },
+            "roe": {
+              "score": 85,
+              "note": "ROE 18.3% (高効率)",
+              "value": 0.18339
+            },
+            "operating_margin": {
+              "score": 75,
+              "note": "営業利益率 24.8%",
+              "value": 0.24786
+            },
+            "target_upside": {
+              "score": 80,
+              "note": "目標まで +29.9%",
+              "current": 22.18,
+              "target": 28.80435
+            }
+          },
+          "timing": {
+            "fifty_two_week_position": {
+              "score": 80,
+              "note": "52週下半分 (高値から-24.7%)",
+              "low": 19.89,
+              "high": 29.44,
+              "current": 22.18
+            },
+            "return_6m": {
+              "score": 75,
+              "note": "6ヶ月 -14.1%",
+              "value": -0.14092678368548783
+            }
+          },
+          "market": "US"
+        },
+        {
+          "ticker": "BAC",
+          "name": "Bank of America Corporation",
+          "sector": "Financial Services",
+          "industry": "Banks - Diversified",
+          "price": 54.32,
+          "market_cap": 379846098944,
+          "currency": "USD",
+          "total_score": 75.9,
+          "axis_scores": {
+            "value": 77.8,
+            "growth": 82.0,
+            "timing": 60.0
+          },
+          "value": {
+            "trailing_pe": {
+              "score": 70,
+              "note": "PER やや割安 (12.5)",
+              "value": 12.545034
+            },
+            "forward_pe": {
+              "score": 80,
+              "note": "予想PER割安 (10.4)",
+              "value": 10.37239
+            },
+            "pbr": {
+              "score": 75,
+              "note": "PBR やや割安 (1.38)",
+              "value": 1.3807127
+            },
+            "peg": {
+              "score": 85,
+              "note": "PEG割安 (0.86)",
+              "value": 0.86
+            },
+            "dividend": {
+              "score": 70,
+              "note": "配当利回り 236.00% (高め・要持続性確認)",
+              "value": 2.36
+            }
+          },
+          "growth": {
+            "revenue_growth": {
+              "score": 85,
+              "note": "売上成長 +16.8%",
+              "value": 0.168
+            },
+            "earnings_growth": {
+              "score": 85,
+              "note": "利益成長 +34.1%",
+              "value": 0.341
+            },
+            "roe": {
+              "score": 70,
+              "note": "ROE 11.2%",
+              "value": 0.111990005
+            },
+            "operating_margin": {
+              "score": 90,
+              "note": "営業利益率 38.3% (高収益体質)",
+              "value": 0.38305
+            },
+            "target_upside": {
+              "score": 80,
+              "note": "目標まで +22.6%",
+              "current": 54.32,
+              "target": 66.59091
+            }
+          },
+          "timing": {
+            "fifty_two_week_position": {
+              "score": 60,
+              "note": "52週中位 (高値から-16.7%)",
+              "low": 46.12,
+              "high": 65.23,
+              "current": 54.32
+            },
+            "return_6m": {
+              "score": 60,
+              "note": "6ヶ月 +4.5%",
+              "value": 0.0445530802173455
+            }
+          },
+          "market": "US"
+        },
+        {
+          "ticker": "EMN",
+          "name": "Eastman Chemical Company",
+          "sector": "Basic Materials",
+          "industry": "Specialty Chemicals",
+          "price": 62.69,
+          "market_cap": 7167135744,
+          "currency": "USD",
+          "total_score": 75.8,
+          "axis_scores": {
+            "value": 80.8,
+            "growth": 69.8,
+            "timing": 78.0
+          },
+          "value": {
+            "trailing_pe": {
+              "score": 50,
+              "note": "PER 平均的 (16.4)",
+              "value": 16.368147
+            },
+            "forward_pe": {
+              "score": 95,
+              "note": "予想PER非常に割安 (9.3)",
+              "value": 9.302139
+            },
+            "pbr": {
+              "score": 75,
+              "note": "PBR やや割安 (1.18)",
+              "value": 1.1757094
+            },
+            "peg": {
+              "score": 95,
+              "note": "PEG非常に割安 (0.48)",
+              "value": 0.48
+            },
+            "dividend": {
+              "score": 70,
+              "note": "配当利回り 536.00% (高め・要持続性確認)",
+              "value": 5.36
+            }
+          },
+          "growth": {
+            "revenue_growth": {
+              "score": 70,
+              "note": "売上成長 +9.9%",
+              "value": 0.099
+            },
+            "earnings_growth": {
+              "score": 85,
+              "note": "利益成長 +32.5%",
+              "value": 0.325
+            },
+            "roe": {
+              "score": 50,
+              "note": "ROE 7.3%",
+              "value": 0.07334
+            },
+            "operating_margin": {
+              "score": 60,
+              "note": "営業利益率 12.9%",
+              "value": 0.12893
+            },
+            "target_upside": {
+              "score": 80,
+              "note": "目標まで +25.8%",
+              "current": 62.69,
+              "target": 78.86667
+            }
+          },
+          "timing": {
+            "fifty_two_week_position": {
+              "score": 80,
+              "note": "52週下半分 (高値から-24.9%)",
+              "low": 56.11,
+              "high": 83.47,
+              "current": 62.69
+            },
+            "return_6m": {
+              "score": 75,
+              "note": "6ヶ月 -13.5%",
+              "value": -0.13531436748297654
+            }
+          },
+          "market": "US"
+        },
+        {
+          "ticker": "TMUS",
+          "name": "T-Mobile US, Inc.",
+          "sector": "Communication Services",
+          "industry": "Telecom Services",
+          "price": 148.58,
+          "market_cap": 159377555456,
+          "currency": "USD",
+          "total_score": 74.0,
+          "axis_scores": {
+            "value": 69.8,
+            "growth": 77.2,
+            "timing": 76.0
+          },
+          "value": {
+            "trailing_pe": {
+              "score": 70,
+              "note": "PER やや割安 (15.5)",
+              "value": 15.525601
+            },
+            "forward_pe": {
+              "score": 80,
+              "note": "予想PER割安 (10.3)",
+              "value": 10.291526
+            },
+            "pbr": {
+              "score": 35,
+              "note": "PBR やや割高 (2.84)",
+              "value": 2.8383129
+            },
+            "peg": {
+              "score": 85,
+              "note": "PEG割安 (0.53)",
+              "value": 0.53
+            },
+            "dividend": {
+              "score": 70,
+              "note": "配当利回り 315.00% (高め・要持続性確認)",
+              "value": 3.15
+            }
+          },
+          "growth": {
+            "revenue_growth": {
+              "score": 70,
+              "note": "売上成長 +7.9%",
+              "value": 0.079
+            },
+            "earnings_growth": {
+              "score": 60,
+              "note": "利益成長 +5.3%",
+              "value": 0.053
+            },
+            "roe": {
+              "score": 85,
+              "note": "ROE 18.0% (高効率)",
+              "value": 0.17994
+            },
+            "operating_margin": {
+              "score": 90,
+              "note": "営業利益率 25.2% (高収益体質)",
+              "value": 0.2522
+            },
+            "target_upside": {
+              "score": 95,
+              "note": "目標まで +62.5% (大幅上振れ余地)",
+              "current": 148.58,
+              "target": 241.5
+            }
+          },
+          "timing": {
+            "fifty_two_week_position": {
+              "score": 70,
+              "note": "52週安値圏 (高値から-35.6%、業績悪化リスク要確認)",
+              "low": 147.9,
+              "high": 230.65,
+              "current": 148.58
+            },
+            "return_6m": {
+              "score": 85,
+              "note": "6ヶ月 -23.2% (調整局面)",
+              "value": -0.23229089524916013
             }
           },
           "market": "US"
@@ -1210,30 +1465,30 @@
           "name": "Oracle Corporation",
           "sector": "Technology",
           "industry": "Software - Infrastructure",
-          "price": 142.3,
-          "market_cap": 431382593536,
+          "price": 141.4,
+          "market_cap": 428654231552,
           "currency": "USD",
-          "total_score": 75.4,
+          "total_score": 72.2,
           "axis_scores": {
             "value": 57.8,
             "growth": 91.8,
-            "timing": 78.0
+            "timing": 62.0
           },
           "value": {
             "trailing_pe": {
               "score": 30,
-              "note": "PER やや割高 (22.3)",
-              "value": 22.304075
+              "note": "PER やや割高 (22.2)",
+              "value": 22.163008
             },
             "forward_pe": {
               "score": 80,
               "note": "予想PER割安 (12.9)",
-              "value": 12.939669
+              "value": 12.855725
             },
             "pbr": {
               "score": 15,
-              "note": "PBR割高 (6.96)",
-              "value": 6.9611588
+              "note": "PBR割高 (6.92)",
+              "value": 6.9171314
             },
             "peg": {
               "score": 85,
@@ -1269,278 +1524,23 @@
             },
             "target_upside": {
               "score": 95,
-              "note": "目標まで +67.2% (大幅上振れ余地)",
-              "current": 142.3,
+              "note": "目標まで +68.3% (大幅上振れ余地)",
+              "current": 141.4,
               "target": 237.97415
             }
           },
           "timing": {
             "fifty_two_week_position": {
               "score": 90,
-              "note": "52週下位20%圏 (高値から-55.9%)",
+              "note": "52週下位20%圏 (高値から-56.2%)",
               "low": 114.5,
               "high": 322.54,
-              "current": 142.3
+              "current": 141.4
             },
             "return_6m": {
-              "score": 60,
-              "note": "6ヶ月 -1.5%",
-              "value": -0.015433554980548325
-            }
-          },
-          "market": "US"
-        },
-        {
-          "ticker": "EOG",
-          "name": "EOG Resources, Inc.",
-          "sector": "Energy",
-          "industry": "Oil & Gas E&P",
-          "price": 141.38,
-          "market_cap": 74157940736,
-          "currency": "USD",
-          "total_score": 75.2,
-          "axis_scores": {
-            "value": 76.2,
-            "growth": 87.8,
-            "timing": 48.0
-          },
-          "value": {
-            "trailing_pe": {
-              "score": 85,
-              "note": "PER割安 (11.0)",
-              "value": 11.002335
-            },
-            "forward_pe": {
-              "score": 95,
-              "note": "予想PER非常に割安 (9.2)",
-              "value": 9.221128
-            },
-            "pbr": {
-              "score": 55,
-              "note": "PBR 平均 (2.33)",
-              "value": 2.3316183
-            },
-            "peg": {
-              "score": 65,
-              "note": "PEG 適正 (1.25)",
-              "value": 1.25
-            },
-            "dividend": {
-              "score": 70,
-              "note": "配当利回り 289.00% (高め・要持続性確認)",
-              "value": 2.89
-            }
-          },
-          "growth": {
-            "revenue_growth": {
-              "score": 95,
-              "note": "売上成長 +58.7% (急成長)",
-              "value": 0.587
-            },
-            "earnings_growth": {
-              "score": 95,
-              "note": "利益成長 +109.4% (急成長)",
-              "value": 1.094
-            },
-            "roe": {
-              "score": 85,
-              "note": "ROE 22.5% (高効率)",
-              "value": 0.22507
-            },
-            "operating_margin": {
-              "score": 90,
-              "note": "営業利益率 40.7% (高収益体質)",
-              "value": 0.40717998
-            },
-            "target_upside": {
-              "score": 65,
-              "note": "目標まで +16.0%",
-              "current": 141.38,
-              "target": 164.0
-            }
-          },
-          "timing": {
-            "fifty_two_week_position": {
-              "score": 40,
-              "note": "52週上位40% (高値から-8.3%)",
-              "low": 101.59,
-              "high": 154.16,
-              "current": 141.38
-            },
-            "return_6m": {
-              "score": 60,
-              "note": "6ヶ月 +0.3%",
-              "value": 0.0033912107916633794
-            }
-          },
-          "market": "US"
-        },
-        {
-          "ticker": "WFC",
-          "name": "Wells Fargo & Company",
-          "sector": "Financial Services",
-          "industry": "Banks - Diversified",
-          "price": 80.45,
-          "market_cap": 243280723968,
-          "currency": "USD",
-          "total_score": 75.0,
-          "axis_scores": {
-            "value": 75.8,
-            "growth": 75.8,
-            "timing": 72.0
-          },
-          "value": {
-            "trailing_pe": {
-              "score": 85,
-              "note": "PER割安 (11.7)",
-              "value": 11.693314
-            },
-            "forward_pe": {
-              "score": 80,
-              "note": "予想PER割安 (10.1)",
-              "value": 10.100338
-            },
-            "pbr": {
-              "score": 75,
-              "note": "PBR やや割安 (1.48)",
-              "value": 1.4780451
-            },
-            "peg": {
-              "score": 65,
-              "note": "PEG 適正 (1.26)",
-              "value": 1.26
-            },
-            "dividend": {
-              "score": 70,
-              "note": "配当利回り 249.00% (高め・要持続性確認)",
-              "value": 2.49
-            }
-          },
-          "growth": {
-            "revenue_growth": {
-              "score": 70,
-              "note": "売上成長 +9.5%",
-              "value": 0.095
-            },
-            "earnings_growth": {
-              "score": 75,
-              "note": "利益成長 +25.0%",
-              "value": 0.25
-            },
-            "roe": {
-              "score": 70,
-              "note": "ROE 12.6%",
-              "value": 0.12575
-            },
-            "operating_margin": {
-              "score": 90,
-              "note": "営業利益率 37.4% (高収益体質)",
-              "value": 0.37387002
-            },
-            "target_upside": {
-              "score": 80,
-              "note": "目標まで +24.5%",
-              "current": 80.45,
-              "target": 100.19565
-            }
-          },
-          "timing": {
-            "fifty_two_week_position": {
-              "score": 80,
-              "note": "52週下半分 (高値から-17.7%)",
-              "low": 72.78,
-              "high": 97.76,
-              "current": 80.45
-            },
-            "return_6m": {
-              "score": 60,
-              "note": "6ヶ月 -0.6%",
-              "value": -0.00580981435389305
-            }
-          },
-          "market": "US"
-        },
-        {
-          "ticker": "EMN",
-          "name": "Eastman Chemical Company",
-          "sector": "Basic Materials",
-          "industry": "Specialty Chemicals",
-          "price": 64.87,
-          "market_cap": 7416368640,
-          "currency": "USD",
-          "total_score": 74.8,
-          "axis_scores": {
-            "value": 78.2,
-            "growth": 69.8,
-            "timing": 78.0
-          },
-          "value": {
-            "trailing_pe": {
-              "score": 50,
-              "note": "PER 平均的 (16.9)",
-              "value": 16.937338
-            },
-            "forward_pe": {
-              "score": 95,
-              "note": "予想PER非常に割安 (9.5)",
-              "value": 9.483655
-            },
-            "pbr": {
-              "score": 75,
-              "note": "PBR やや割安 (1.22)",
-              "value": 1.2165939
-            },
-            "peg": {
-              "score": 85,
-              "note": "PEG割安 (0.50)",
-              "value": 0.5
-            },
-            "dividend": {
-              "score": 70,
-              "note": "配当利回り 518.00% (高め・要持続性確認)",
-              "value": 5.18
-            }
-          },
-          "growth": {
-            "revenue_growth": {
-              "score": 70,
-              "note": "売上成長 +9.9%",
-              "value": 0.099
-            },
-            "earnings_growth": {
-              "score": 85,
-              "note": "利益成長 +32.5%",
-              "value": 0.325
-            },
-            "roe": {
-              "score": 50,
-              "note": "ROE 7.3%",
-              "value": 0.07334
-            },
-            "operating_margin": {
-              "score": 60,
-              "note": "営業利益率 12.9%",
-              "value": 0.12893
-            },
-            "target_upside": {
-              "score": 80,
-              "note": "目標まで +24.8%",
-              "current": 64.87,
-              "target": 80.93333
-            }
-          },
-          "timing": {
-            "fifty_two_week_position": {
-              "score": 80,
-              "note": "52週下半分 (高値から-22.3%)",
-              "low": 56.11,
-              "high": 83.47,
-              "current": 64.87
-            },
-            "return_6m": {
-              "score": 75,
-              "note": "6ヶ月 -9.4%",
-              "value": -0.09352541071866438
+              "score": 20,
+              "note": "6ヶ月 +nan% (急騰中)",
+              "value": NaN
             }
           },
           "market": "US"
@@ -1550,40 +1550,40 @@
           "name": "Citigroup, Inc.",
           "sector": "Financial Services",
           "industry": "Banks - Diversified",
-          "price": 128.5,
-          "market_cap": 215550623744,
+          "price": 129.64,
+          "market_cap": 217462898688,
           "currency": "USD",
-          "total_score": 73.1,
+          "total_score": 72.0,
           "axis_scores": {
-            "value": 82.2,
-            "growth": 80.5,
-            "timing": 40.0
+            "value": 77.8,
+            "growth": 78.2,
+            "timing": 48.0
           },
           "value": {
             "trailing_pe": {
               "score": 70,
-              "note": "PER やや割安 (13.9)",
-              "value": 13.876889
+              "note": "PER やや割安 (14.0)",
+              "value": 14.0
             },
             "forward_pe": {
-              "score": 95,
-              "note": "予想PER非常に割安 (10.0)",
-              "value": 9.962792
+              "score": 80,
+              "note": "予想PER割安 (10.0)",
+              "value": 10.0107565
             },
             "pbr": {
               "score": 75,
-              "note": "PBR やや割安 (1.12)",
-              "value": 1.1199428
+              "note": "PBR やや割安 (1.13)",
+              "value": 1.1298785
             },
             "peg": {
               "score": 85,
-              "note": "PEG割安 (0.60)",
-              "value": 0.6
+              "note": "PEG割安 (0.61)",
+              "value": 0.61
             },
             "dividend": {
               "score": 70,
-              "note": "配当利回り 209.00% (高め・要持続性確認)",
-              "value": 2.09
+              "note": "配当利回り 207.00% (高め・要持続性確認)",
+              "value": 2.07
             }
           },
           "growth": {
@@ -1608,109 +1608,109 @@
               "value": 0.36229
             },
             "target_upside": {
-              "score": 80,
-              "note": "目標まで +20.7%",
-              "current": 128.5,
-              "target": 155.05
+              "score": 65,
+              "note": "目標まで +17.4%",
+              "current": 129.64,
+              "target": 152.19048
             }
           },
           "timing": {
             "fifty_two_week_position": {
               "score": 40,
-              "note": "52週上位40% (高値から-13.2%)",
-              "low": 93.66,
+              "note": "52週上位40% (高値から-12.4%)",
+              "low": 95.0,
               "high": 147.96,
-              "current": 128.5
+              "current": 129.64
             },
             "return_6m": {
-              "score": 40,
-              "note": "6ヶ月 +10.6% (上昇局面)",
-              "value": 0.10569418239922701
+              "score": 60,
+              "note": "6ヶ月 +5.2%",
+              "value": 0.052459867481348565
             }
           },
           "market": "US"
         },
         {
-          "ticker": "MGM",
-          "name": "MGM Resorts International",
-          "sector": "Consumer Cyclical",
-          "industry": "Resorts & Casinos",
-          "price": 30.48,
-          "market_cap": 7798345216,
+          "ticker": "USB",
+          "name": "U.S. Bancorp",
+          "sector": "Financial Services",
+          "industry": "Banks - Regional",
+          "price": 57.08,
+          "market_cap": 88933580800,
           "currency": "USD",
-          "total_score": 72.1,
+          "total_score": 71.9,
           "axis_scores": {
-            "value": 62.8,
-            "growth": 75.5,
-            "timing": 84.0
+            "value": 74.0,
+            "growth": 75.8,
+            "timing": 60.0
           },
           "value": {
             "trailing_pe": {
-              "score": 50,
-              "note": "PER 平均的 (18.8)",
-              "value": 18.814814
+              "score": 85,
+              "note": "PER割安 (11.4)",
+              "value": 11.393213
             },
             "forward_pe": {
-              "score": 65,
-              "note": "予想PER やや割安 (14.8)",
-              "value": 14.752789
+              "score": 95,
+              "note": "予想PER非常に割安 (9.8)",
+              "value": 9.832717
             },
             "pbr": {
-              "score": 35,
-              "note": "PBR やや割高 (3.05)",
-              "value": 3.0504403
+              "score": 75,
+              "note": "PBR やや割安 (1.47)",
+              "value": 1.4669374
             },
             "peg": {
-              "score": 95,
-              "note": "PEG非常に割安 (0.39)",
-              "value": 0.39
+              "score": 40,
+              "note": "PEG やや割高 (1.71)",
+              "value": 1.71
             },
             "dividend": {
-              "score": 50,
-              "note": "無配・取得不可",
-              "value": 0.0
+              "score": 70,
+              "note": "配当利回り 378.00% (高め・要持続性確認)",
+              "value": 3.78
             }
           },
           "growth": {
             "revenue_growth": {
-              "score": 55,
-              "note": "売上成長 +1.0% (微増)",
-              "value": 0.01
+              "score": 70,
+              "note": "売上成長 +10.4%",
+              "value": 0.104
             },
             "earnings_growth": {
-              "score": 95,
-              "note": "利益成長 +519.4% (急成長)",
-              "value": 5.194
+              "score": 75,
+              "note": "利益成長 +21.6%",
+              "value": 0.216
             },
             "roe": {
-              "score": 85,
-              "note": "ROE 18.9% (高効率)",
-              "value": 0.18924999
+              "score": 70,
+              "note": "ROE 12.6%",
+              "value": 0.12623
             },
             "operating_margin": {
-              "score": 45,
-              "note": "営業利益率 6.8%",
-              "value": 0.067880005
+              "score": 90,
+              "note": "営業利益率 39.6% (高収益体質)",
+              "value": 0.39646998
             },
             "target_upside": {
-              "score": 95,
-              "note": "目標まで +61.8% (大幅上振れ余地)",
-              "current": 30.48,
-              "target": 49.33158
+              "score": 80,
+              "note": "目標まで +20.9%",
+              "current": 57.08,
+              "target": 69.0
             }
           },
           "timing": {
             "fifty_two_week_position": {
-              "score": 90,
-              "note": "52週下位20%圏 (高値から-40.9%)",
-              "low": 29.19,
-              "high": 51.59,
-              "current": 30.48
+              "score": 60,
+              "note": "52週中位 (高値から-13.6%)",
+              "low": 45.02,
+              "high": 66.08,
+              "current": 57.08
             },
             "return_6m": {
-              "score": 75,
-              "note": "6ヶ月 -18.9%",
-              "value": -0.18936168140499365
+              "score": 60,
+              "note": "6ヶ月 +4.4%",
+              "value": 0.0439851327923626
             }
           },
           "market": "US"
